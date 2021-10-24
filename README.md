@@ -12,3 +12,5 @@ A web application for reading and writing blogs and thus, sharing your thoughts 
 - Python3 : Flask, SQLAlchemy, SMTP, LoginManager (for user sessions), Bcrypt (for password encryption) etc.
 - SQLite
 - HTML, Bootstrap, CSS
+
+> NOTE : In bloggitApplication/init.py provide your email ID and password to make the password reset APIs work correctly.
