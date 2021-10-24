@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = "content-section"> 
+    <form method="POST" action="">
+        {{ form_flask.hidden_tag() }} 
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">{{ legend }}</legend>  
+            <div class="form-group"> 
+                {{ form_flask.title.label(class = "form-control-label") }}
+                {% if form_flask.title.errors %}
+                {{ form_flask.title(class = "form-control form-control-lg is-invalid") }}
+                <div class = "invalid-feedback">
+                {% for err in form_flask.title.errors %}
+                    <span>{{ err }}</span>
+                {% endfor %}
+                </div>
+                {% else %}
+                {{ form_flask.title(class = "form-control form-control-lg") }} 
+                {% endif %} 
+            </div>
+            <div class="form-group"> 
+                {{ form_flask.content.label(class = "form-control-label") }}
+                {% if form_flask.content.errors %}
+                {{ form_flask.content(class = "form-control form-control-lg is-invalid") }}
+                <div class = "invalid-feedback">
+                {% for err in form_flask.content.errors %}
+                    <span>{{ err }}</span>
+                {% endfor %}
+                </div>
+                {% else %}
+                {{ form_flask.content(class = "form-control form-control-lg") }} 
+                {% endif %} 
+            </div>
+            <div class="form-group"> 
+                {{ form_flask.submit(class = "btn btn-outline-info") }}  
+            </div>
+        </fieldset>
+    </form>
+</div>
+{% endblock %}
