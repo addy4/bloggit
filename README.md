@@ -13,4 +13,8 @@ A web application for reading and writing blogs and thus, sharing your thoughts 
 - SQLite
 - HTML, Bootstrap, CSS
 
-> NOTE : In bloggitApplication/init.py provide your email ID and password to make the password reset APIs work correctly.
+> NOTE : In bloggitApplication/keys.py provide your email ID and password to make the password reset APIs work correctly.
+
+#### UI
+- Registeration
+![alt text](https://github.com/addy4/bloggit/blob/main/bloggitApplication/ui-images/registeration.png?raw=true)
