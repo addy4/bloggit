@@ -16,4 +16,18 @@ A web application for reading and writing blogs and thus, sharing your thoughts 
 > NOTE : In bloggitApplication/keys.py provide your email ID and password to make the password reset APIs work correctly.
 
 #### Front-End (UI/UX)
-![alt text](https://github.com/addy4/bloggit/blob/main/bloggitApplication/ui-images/registeration.png?raw=true "Registeration")
+- Registeration
+
+![alt text](https://github.com/addy4/bloggit/blob/main/bloggitApplication/ui-images/registeration.png?raw=true)
+
+- Login
+
+![alt text](https://github.com/addy4/bloggit/blob/main/bloggitApplication/ui-images/login.png?raw=true)
+
+- Permissions
+
+![alt text](https://github.com/addy4/bloggit/blob/main/bloggitApplication/ui-images/permissions.png?raw=true)
+
+- Blog Post
+
+![alt text](https://github.com/addy4/bloggit/blob/main/bloggitApplication/ui-images/post.png?raw=true)
