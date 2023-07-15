@@ -13,7 +13,7 @@ A web application for reading and writing blogs and thus, sharing your thoughts 
 - SQLite
 - HTML, Bootstrap, CSS
 
-> NOTE : In bloggitApplication/keys.py provide your email ID and password to make the password reset APIs work correctly.
+> NOTE : In bloggitApplication/keys.py provide your email ID and "app" password to allow the password reset APIs use your GMail to send password reset link.
 
 #### Front-End (UI/UX)
 - Registeration
