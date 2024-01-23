@@ -1,0 +1,121 @@
+C:\repodir\proj\py-blog\bloggit>git status
+On branch feature/blogging
+Your branch is up to date with 'origin/feature/blogging'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Dockerfile
+        new file:   LOGS.txt
+        new file:   bloggitApplication/__pycache__/__init__.cpython-39.pyc
+        new file:   bloggitApplication/__pycache__/forms.cpython-39.pyc
+        new file:   bloggitApplication/__pycache__/keys.cpython-39.pyc
+        new file:   bloggitApplication/__pycache__/models.cpython-39.pyc
+        new file:   bloggitApplication/__pycache__/routes.cpython-39.pyc
+        new file:   requirements.txt
+        modified:   run.py
+
+
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>git commit -m "Flask Blogging v1.0.0"
+[feature/blogging 970b7af] Flask Blogging v1.0.0
+ Committer: Aadhaar Bhatia <aadhaar.bhatia@non.keysight.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 90 insertions(+), 1 deletion(-)
+ create mode 100644 Dockerfile
+ create mode 100644 LOGS.txt
+ create mode 100644 bloggitApplication/__pycache__/__init__.cpython-39.pyc
+ create mode 100644 bloggitApplication/__pycache__/forms.cpython-39.pyc
+ create mode 100644 bloggitApplication/__pycache__/keys.cpython-39.pyc
+ create mode 100644 bloggitApplication/__pycache__/models.cpython-39.pyc
+ create mode 100644 bloggitApplication/__pycache__/routes.cpython-39.pyc
+ create mode 100644 requirements.txt
+
+C:\repodir\proj\py-blog\bloggit>git status
+On branch feature/blogging
+Your branch is ahead of 'origin/feature/blogging' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>git push
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 10.24 KiB | 2.56 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/addy4/bloggit.git
+   169cb90..970b7af  feature/blogging -> feature/blogging
+
+C:\repodir\proj\py-blog\bloggit>docker tag blogging-app-flask:1.0.0 aadhaarb/blogging-app-flask:v1.0.0
+
+C:\repodir\proj\py-blog\bloggit>docker login
+Authenticating with existing credentials...
+Login Succeeded
+
+Logging in with your password grants your terminal complete access to your account.
+For better security, log in with a limited-privilege personal access token. Learn more at https://docs.docker.com/go/access-tokens/
+
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>docker tag blogging-app-flask:1.0.0 aadhaarb/blogging-app-flask:v1.0.0
+
+C:\repodir\proj\py-blog\bloggit>docker images
+REPOSITORY                                                TAG                                                                          IMAGE ID       CREATED         SIZE
+aadhaarb/blogging-app-flask                               v1.0.0                                                                       a01ba2e55f92   3 minutes ago   199MB
+blogging-app-flask                                        1.0.0                                                                        a01ba2e55f92   3 minutes ago   199MB
+bloggingapplication                                       latest                                                                       8572dd7f1f05   11 hours ago    199MB
+<none>                                                    <none>                                                                       04b623d592d1   11 hours ago    199MB
+keysight/kdic-leaf                                        latest                                                                       eed8dd9c54ae   6 months ago    24.4MB
+keysight/kdic-root                                        latest                                                                       156d0ba13e62   6 months ago    38.7MB
+ubuntu                                                    latest                                                                       a8780b506fa4   14 months ago   77.8MB
+hubproxy.docker.internal:5000/docker/desktop-kubernetes   kubernetes-v1.25.0-cni-v1.1.1-critools-v1.24.2-cri-dockerd-v0.2.5-1-debian   2042e761d17a   17 months ago   363MB
+k8s.gcr.io/kube-apiserver                                 v1.25.0                                                                      4d2edfd10d3e   17 months ago   128MB
+k8s.gcr.io/kube-scheduler                                 v1.25.0                                                                      bef2cf311509   17 months ago   50.6MB
+k8s.gcr.io/kube-controller-manager                        v1.25.0                                                                      1a54c86c03a6   17 months ago   117MB
+k8s.gcr.io/kube-proxy                                     v1.25.0                                                                      58a9a0c6d96f   17 months ago   61.7MB
+oryd/hydra                                                v1.11.9                                                                      7a9f2ef12863   17 months ago   38.4MB
+k8s.gcr.io/pause                                          3.8                                                                          4873874c08ef   19 months ago   711kB
+k8s.gcr.io/etcd                                           3.5.4-0                                                                      a8a176a5d5d6   19 months ago   300MB
+k8s.gcr.io/coredns                                        v1.9.3                                                                       5185b96f0bec   20 months ago   48.8MB
+docker/desktop-vpnkit-controller                          v2.0                                                                         8c2c38aa676e   2 years ago     21MB
+docker/desktop-storage-provisioner                        v2.0                                                                         99f89471f470   2 years ago     41.9MB
+stephengrider/multi-client                                latest                                                                       dd85c346890b   5 years ago     110MB
+
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>dockr push aadhaarb/blogging-app-flask:v1.0.0
+'dockr' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\repodir\proj\py-blog\bloggit>docker push aadhaarb/blogging-app-flask:v1.0.0
+The push refers to repository [docker.io/aadhaarb/blogging-app-flask]
+5f70bf18a086: Pushed
+d8d2c28e875e: Pushed
+1e022bd974ff: Pushed
+c6bbe8302c6c: Pushed
+a90d13bb99a7: Mounted from library/python
+681a1fc3389e: Mounted from library/python
+47cdb7a27fca: Mounted from library/python
+e96fe707bd25: Mounted from library/python
+571ade696b26: Mounted from library/python
+v1.0.0: digest: sha256:0ab9231a872ed644301d20f72b51a1acddbf88300360930d20721236d8ad3a5a size: 2205
+
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>
+C:\repodir\proj\py-blog\bloggit>
